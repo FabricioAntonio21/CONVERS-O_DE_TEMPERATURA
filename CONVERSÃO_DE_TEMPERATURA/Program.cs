@@ -13,24 +13,26 @@ escolha = int.Parse(Console.ReadLine());
 switch (escolha)
 {
     case 1:
+        Console.Clear();
         Console.WriteLine("Conversão CELSIUS -> FAHRENHEIT foi escolhida");
-        Console.WriteLine("Insira a temperatura em CELSIUS (°C");
+        Console.WriteLine("Insira a temperatura em CELSIUS (°C)");
         celsius = double.Parse(Console.ReadLine());
 
-        conversao1 = (celsius * 9) / 5 + 32;
+        conversao1 = (celsius * 9 / 5) + 32;
 
         Console.WriteLine(celsius + " em FAHRENHEIT é: " + conversao1);
 
         break;
 
     case 2:
+        Console.Clear();
         Console.WriteLine("Conversão FAHRENHEIT -> CELSIUS foi escolhida");
         Console.WriteLine("Insira a temperatura em FAHRENHEIT (°F)");
         fahrenheit = double.Parse(Console.ReadLine());
 
         conversao2 = (fahrenheit - 32) * 5 / 9;
 
-        Console.WriteLine(fahrenheit + " em CELSIUS é: " + conversao2);
+        Console.WriteLine(fahrenheit + " em CELSIUS é: " + conversao2.ToString("F"));
         break;
 
     default:
